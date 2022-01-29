@@ -1,0 +1,166 @@
+/********************** STRUCTURE STYLES ***********************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    width: 100%;
+    font-size: 1em;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+main, footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.container {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+h1 {
+    width: 100%;
+}
+
+h2 {
+    width: 100%;
+}
+
+/********************* HERO ************************/
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 35px;
+}
+.hero img {
+    width: 100%;
+    margin-top: 85px;
+}
+
+.hero h1 {
+    color: hsl(0, 0%, 59%);
+    padding-top: 44px;
+    font-size: 1.35em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero h2 {
+    padding-top: 25px;
+    font-size: .85em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.hero span {
+    color: #000;
+    font-weight: 700;
+}
+/********************* FORM ***********************/
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 70px;
+}
+
+form input {
+    width: 75%;
+    padding: 15px 0 15px 35px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border-color: hsl(0, 0%, 59%);
+    color: hsl(0, 0%, 59%);
+}
+
+form button {
+    width: 85%;
+    padding: 15px 0;
+    border-radius: 25px;
+    border-color: hsl(223, 87%, 63%);
+    font-weight: 600;
+    color: #fff;
+    background-color: hsl(223, 87%, 63%);
+}
+
+
+/********************* IMAGE FIELD ***********************/
+.img-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 117px;
+}
+
+
+img {
+    width: 100%;
+}
+
+/************************** SOCIAL ************************/
+
+.socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 28px;
+}
+
+.icons {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+i {
+    font-size: .75em;
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(0, 0%, 59%);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.fa-facebook-f {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/********************* FOOTER *****************************/
+
+.license {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    font-size: .65em;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 50px;
+}

@@ -11,7 +11,10 @@
   <script src="js/script.js" defer></script>
 
   <!-- Font awesome link -->
-  
+  <script src="https://kit.fontawesome.com/9c12f75243.js" crossorigin="anonymous"></script>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Ping coming soon page</title>
 
@@ -24,28 +27,38 @@
 </head>
 <body>
   <main>
-    <container>
+    <div class="container">
       <div class="hero">
         <figure>
           <img src="img/logo.svg" alt="Ping">
         </figure>
-        <h1>We are launching soon!</h1>
+        <h1>We are launching <span>soon!</span></h1>
         <h2>Subscribe and get notified</h2>
       </div>
-
-      <div class="form">
-        <form>
+      <form>
           <input type="text" name="email" value="Your email address...">
           <button>Notify Me</button>
-        </form>
-      </div>
+      </form>
 
       <div class="img-field">
-        <img src="img/illustration-dashboard.png" alt="dashboard">
-
+        <figure>
+          <img src="img/illustration-dashboard.png" alt="dashboard">
+        </figure>
       </div>
-      
-    </container>
+
+      <div class="socials">
+        <div class="icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        
+      </div>
+
+      <div class="license">
+        <p>&copy; Copyright Ping. All rights reserved.</p>
+      </div>
+    </div>
 
     <!--We are launching soon!
 
