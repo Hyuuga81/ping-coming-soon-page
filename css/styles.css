@@ -77,7 +77,7 @@ h2 {
 }
 /********************* FORM ***********************/
 
-form {
+.form {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -86,7 +86,7 @@ form {
     margin-bottom: 70px;
 }
 
-form input {
+.form input {
     width: 75%;
     padding: 15px 0 15px 35px;
     margin-bottom: 10px;
@@ -95,7 +95,7 @@ form input {
     color: hsl(0, 0%, 59%);
 }
 
-form button {
+.form button {
     width: 85%;
     padding: 15px 0;
     border-radius: 25px;
@@ -103,8 +103,12 @@ form button {
     font-weight: 600;
     color: #fff;
     background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
 }
 
+.form p {
+    width: 75%;
+}
 
 /********************* IMAGE FIELD ***********************/
 .img-field {
