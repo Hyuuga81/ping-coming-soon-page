@@ -5,13 +5,13 @@ const message = document.querySelector(".message");
 
 notifyButton.addEventListener("click", function () {
     
-    // const warningList = ["alert", "alert-warning"];
-    // for (let item of warningList) {
-    //     message.classList.add(item);
-    //     console.log(item);
-    // }
-    
     if (emailInput.value === "") {
-        message.innerText = "Please enter a valid email address.";
+        message.innerHTML = `<p >Please enter a valid email address.</p><style>p {padding-bottom: 15px;font-size: .8em;}</style>`; 
     }
 });
+
+// function to validate email
+// Use regular expressions
+// /\S+@\S+\.\S+/ - to prevent these from being used.
+// /^[^\s@]+@[^\s@]+\.[^\s@]+$/ - to prevent you from using the same symbols twice
+

@@ -66,9 +66,9 @@ h2 {
 
 .hero h2 {
     padding-top: 25px;
-    font-size: .85em;
+    font-size: .75em;
     text-align: center;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .hero span {
@@ -78,7 +78,7 @@ h2 {
 /********************* FORM ***********************/
 
 .form {
-    width: 100%;
+    width: 88%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +87,8 @@ h2 {
 }
 
 .form input {
-    width: 75%;
+    width: 100%;
+    font-size: .8em;
     padding: 15px 0 15px 35px;
     margin-bottom: 10px;
     border-radius: 25px;
@@ -95,8 +96,10 @@ h2 {
     color: hsl(0, 0%, 59%);
 }
 
+/* change error styles to red border */
+
 .form button {
-    width: 85%;
+    width: 100%;
     padding: 15px 0;
     border-radius: 25px;
     border-color: hsl(223, 87%, 63%);
@@ -107,8 +110,13 @@ h2 {
 }
 
 .form p {
-    width: 75%;
+    width: 100%;
+    /* font-size: .6em; */
+    text-align: center;
+    color: hsl(354, 100%, 66%);
 }
+
+
 
 /********************* IMAGE FIELD ***********************/
 .img-field {
@@ -167,4 +175,8 @@ i {
     font-size: .65em;
     color: hsl(0, 0%, 59%);
     margin-bottom: 50px;
+}
+
+footer p {
+    font-size: .75em;
 }
