@@ -92,8 +92,17 @@ h2 {
     padding: 15px 0 15px 35px;
     margin-bottom: 10px;
     border-radius: 25px;
+    color: #000;
+    /*border-color: hsl(0, 0%, 59%);
+    color: #000;*/
+}
+
+.email-border {
     border-color: hsl(0, 0%, 59%);
-    color: hsl(0, 0%, 59%);
+}
+
+.error-border {
+    border-color: hsl(354, 100%, 66%);
 }
 
 /* change error styles to red border */
@@ -110,12 +119,13 @@ h2 {
 }
 
 .form p {
+    padding-bottom: 15px;
+    font-size: .8em;
     width: 100%;
     /* font-size: .6em; */
     text-align: center;
     color: hsl(354, 100%, 66%);
 }
-
 
 
 /********************* IMAGE FIELD ***********************/
@@ -157,6 +167,12 @@ i {
     border: 1px solid hsl(0, 0%, 59%);
     padding: 12px;
     border-radius: 50%;
+}
+
+i:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: hsl(223, 87%, 63%);;
 }
 
 .fa-facebook-f {

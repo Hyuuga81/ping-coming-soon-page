@@ -4,14 +4,23 @@ const message = document.querySelector(".message");
 
 
 notifyButton.addEventListener("click", function () {
-    
-    if (emailInput.value === "") {
-        message.innerHTML = `<p >Please enter a valid email address.</p><style>p {padding-bottom: 15px;font-size: .8em;}</style>`; 
-    }
+   validateEmail(); 
+
 });
 
-// function to validate email
-// Use regular expressions
-// /\S+@\S+\.\S+/ - to prevent these from being used.
-// /^[^\s@]+@[^\s@]+\.[^\s@]+$/ - to prevent you from using the same symbols twice
-
+//Validation function 
+const validateEmail = function () {
+    const regularExpression = /^([a-z]+)@([a-zA-Z0-9\._]+)\.([a-z]+)([\.]?)/;
+    
+    //else if match regular expression, return true. 
+    if (emailInput.value.match(regularExpression)) {
+        // message.innerHTML = `<p>Valid email address.</p>`;
+        emailInput.value = "";
+    } 
+    //else if doesnt match regular expression, this email is invalid
+    else {
+        message.innerHTML = `<p>Please provide a valid email address.</p>`;
+        message.classList.remove("email-border");
+        message.classList.add("error-border");
+    }
+}
