@@ -86,6 +86,13 @@ h2 {
     margin-bottom: 70px;
 }
 
+.the-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 .form input {
     width: 100%;
     font-size: .8em;
@@ -112,6 +119,7 @@ h2 {
     padding: 15px 0;
     border-radius: 25px;
     border-color: hsl(223, 87%, 63%);
+    font-size: .8em;
     font-weight: 600;
     color: #fff;
     background-color: hsl(223, 87%, 63%);
@@ -172,7 +180,7 @@ i {
 i:hover {
     cursor: pointer;
     color: #fff;
-    background-color: hsl(223, 87%, 63%);;
+    background-color: hsl(223, 87%, 63%);
 }
 
 .fa-facebook-f {
@@ -195,4 +203,41 @@ i:hover {
 
 footer p {
     font-size: .75em;
+}
+
+/******************** DESKTOP STYLES ************************/
+
+@media (min-width: 1440px) {
+    /*************** STRUCTURAL STYLES ******************/
+
+    .container {
+        width: 45%;
+    }
+
+
+    .img-field {
+        margin-bottom: 68px;
+    }
+
+    /**************** FORM ******************************/
+
+    .form {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .the-input {
+        width: 66%;
+        padding: 0 0 15px 0;
+    }
+
+    .form button {
+        width: 31%;
+    }
+
+    /********************* SOCIALS **********************/
+
+    .icons {
+        width: 25%;
+    }
 }
