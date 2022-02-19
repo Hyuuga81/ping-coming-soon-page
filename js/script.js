@@ -13,14 +13,15 @@ const validateEmail = function () {
     const regularExpression = /^([a-z]+)@([a-zA-Z0-9\._]+)\.([a-z]+)([\.]?)/;
     
     //else if match regular expression, return true. 
-    if (emailInput.value.match(regularExpression)) {
-        // message.innerHTML = `<p>Valid email address.</p>`;
-        emailInput.value = "";
-    } 
-    //else if doesnt match regular expression, this email is invalid
-    else {
+    if (!emailInput.value.match(regularExpression)) {
         message.innerHTML = `<p>Please provide a valid email address.</p>`;
         message.classList.remove("email-border");
         message.classList.add("error-border");
+        
+    } 
+    //else if doesnt match regular expression, this email is invalid
+    else {
+        emailInput.value = "";
+        message.innerText = "";
     }
 }
